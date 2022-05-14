@@ -18,6 +18,9 @@ gem "puma", "~> 5.0"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
 
+gem "haml-rails", "~> 2.0"
+
+
 # Authentication for Rails
 gem 'devise'
 

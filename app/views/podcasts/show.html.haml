@@ -1,0 +1,8 @@
+%p{:style => "color: green"}= notice
+= render @podcast
+%div
+  = link_to "Edit this podcast", edit_podcast_path(@podcast)
+  |
+  \#{link_to "Back to podcasts", podcasts_path}
+  
+  \#{button_to "Destroy this podcast", @podcast, method: :delete}
