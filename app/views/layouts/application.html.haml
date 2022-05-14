@@ -10,10 +10,8 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body
-    %p.notice= notice
+    =render "shared/nav"
     %p.alert= alert
+    %p.notice= notice
     %main.container.mx-auto.mt-28.px-5.flex
-      = current_user.email if current_user
-      .container
-        = button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-primary" if current_user
       = yield
