@@ -1,4 +1,4 @@
-name: Continuse integration
+name: GitHub Actions Demo
 on:
   push:
     branches: [master]
